@@ -116,7 +116,7 @@ const Gioco1: React.FC<Gioco1Props> = ({ allBiscotti, handleGiocoAttivo }) => {
               Passa al secondo gioco!
             </div>
           )}
-          {statoGioco1.categoriaScelta.biscottoScelto !== "" &&
+          {statoGioco1.categoriaScelta.biscottoScelto !== {} &&
             !statoGioco1.mostraParole && (
               <div
                 onClick={() =>
@@ -145,7 +145,7 @@ const Gioco1: React.FC<Gioco1Props> = ({ allBiscotti, handleGiocoAttivo }) => {
                 scoperta={item.scoperta}
                 number={item.id}
                 categoria={item.parola}
-                onPress={() => this.handleClickedParola(item.id)}
+                onPress={() => handleClickedParola(item.id)}
               />
             ))}
           </div>

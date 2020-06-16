@@ -15,7 +15,7 @@ export interface BiscottoTS {
 
 export interface Gioco1Props {
   allBiscotti: BiscottoTS[];
-  handleGiocoAttivo: (index: number) => void;
+  handleGiocoAttivo: (giocoId: string) => void;
 }
 
 export interface StatoGioco1 {
