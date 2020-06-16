@@ -1,0 +1,227 @@
+@font-face {
+  font-family: "Falling Sky Black";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./assets/fonts/FallingSkyBlk.otf"); /* IE9 Compat Modes */
+  src: local("Falling Sky Black"), local("Falling Sky Black"),
+    url("./assets/fonts/FallingSkyBlk.woff") format("woff"); /* Modern Browsers */
+}
+@font-face {
+  font-family: "Falling Sky Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./assets/fonts/FallingSkyLight.otf"); /* IE9 Compat Modes */
+  src: local("Falling Sky Light"), local("Falling Sky Light"),
+    url("./assets/fonts/FallingSkyLight.woff") format("woff"); /* Modern Browsers */
+}
+
+* {
+  box-sizing: border-box;
+}
+.contGioca {
+  width: 100%;
+  padding-top: 10px;
+}
+.biscotto {
+  display: flex;
+  position: relative;
+  min-height: 62px;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: #34005a;
+  border: 3px solid #d3d985;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-family: Falling Sky Black;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+}
+.biscottoVerde {
+  background-color: #d3d985;
+  border: 3px solid #34005a;
+  color: #34005a;
+  display: flex;
+  font-size: 20px;
+  line-height: 20px;
+}
+.biscottoParola {
+  background-color: #d3d985;
+  border: 3px solid #34005a;
+  color: #34005a;
+  display: flex;
+  font-size: 20px;
+  line-height: 20px;
+}
+.biscottoAttivo {
+  background-color: #34005a;
+  border: 3px solid #d3d985;
+  color: #d3d985;
+  display: flex;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+.boxCat {
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: flex-start;
+  flex: 1;
+  display: flex;
+}
+.catIndizioTextGreen {
+  font-family: Falling Sky Black;
+  font-size: 20px;
+  color: #d3d985;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  line-height: 26px;
+  text-align: center;
+}
+.catIndizioCenter {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.number {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #bfc47b;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 20px;
+  line-height: 20px;
+}
+.background {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  background-color: #f8eadf;
+  height: 100vh;
+  padding: 20px;
+}
+.logo {
+  position: relative;
+  margin-top: 30px;
+}
+.contButton {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+}
+.buttonPurple {
+  background-color: #34005a;
+  border: 3px solid #d3d985;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  font-family: "Falling Sky Black";
+  font-size: 45px;
+  text-decoration: none;
+  color: #d3d985;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  line-height: 45px;
+  padding: 8px 0;
+}
+.buttonGreen {
+  background-color: #d3d985;
+  border: 3px solid #34005a;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  font-size: 30px;
+  font-family: "Falling Sky Black";
+  text-decoration: none;
+  color: #34005a;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  line-height: 30px;
+  padding: 8px 0;
+}
+
+.contRegolamento {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  background-color: white;
+  border: 3px solid #34005a;
+  border-radius: 10px;
+  align-items: center;
+  padding: 10px 20px 30px;
+  margin-top: 12px;
+  margin-bottom: 40px;
+  height: 100vh;
+  overflow: scroll;
+}
+.contCredits .testoRegola {
+  text-align: center !important;
+}
+.singleRule {
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.titolo {
+  font-family: "Falling Sky Black";
+  font-size: 35px;
+  color: #34005a;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.testoRegola {
+  font-family: "Falling Sky Light";
+  font-size: 20px;
+  color: #111;
+  letter-spacing: -0.7px;
+  text-align: left;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+.titoloRegola {
+  background-color: #34005a;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-family: "Falling Sky Black";
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  margin-bottom: 10px;
+}

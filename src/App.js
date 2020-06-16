@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Switch } from "react-router";
+import { createBrowserHistory } from "history";
+import { Router } from "react-router-dom";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import WelcomeScreen from "./screens/WelcomeScreen";
+import Regolamento from "./screens/Regolamento";
+import Credits from "./screens/Credits";
+import Gioca from "./screens/Gioca";
+
+const history = createBrowserHistory({
+  basename: process.env.PUBLIC_URL,
+});
+
+class App extends React.Component {
+  render() {
+    return (
+      <Router history={history}>
+        <Switch>
+          <WelcomeScreen exact path="/" />
+          <Gioca exact path="/gioca" />
+          <Regolamento exact path="/regolamento" />
+          <Credits exact path="/credits" />
+        </Switch>
+      </Router>
+    );
+  }
 }
 
 export default App;
